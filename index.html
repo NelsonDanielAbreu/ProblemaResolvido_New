@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Problema Resolvido — De A a Z, nós tratamos de tudo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO / MENU -->
+    <header>
+        <div class="logo">
+            PROBLEMA<span>RESOLVIDO</span>
+        </div>
+
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#porque-nos">Porquê Nós</a>
+            <a href="#contacto" class="nav-cta">Resolver Agora</a>
+        </nav>
+    </header>
+
+
+    <!-- SECÇÃO PRINCIPAL -->
+    <section class="hero">
+
+        <div class="bg-glow"></div>
+
+        <div class="hero-container">
+
+            <!-- LADO ESQUERDO -->
+            <div class="hero-left">
+
+                <span class="badge">
+                    A SOLUÇÃO DE A a Z
+                </span>
+
+                <h1>
+                    TEM UM
+                    <br>
+                    <span class="text-red">PROBLEMA?</span>
+                    <br>
+                    <span class="text-sub">NÓS RESOLVEMOS.</span>
+                </h1>
+
+                <p>
+                    Pequenos ou grandes problemas – reparações, mudanças,
+                    documentação, recados e muito mais. Um único contacto,
+                    soluções para tudo.
+                </p>
+
+            </div>
+
+
+            <!-- LADO DIREITO -->
+            <div class="hero-right">
+
+                <!-- MASCOTE -->
+                <div class="mascot-container">
+
+                    <div class="floating-bubble">
+                        Diga-me o seu problema, eu trato do resto!
+                    </div>
+
+                    <img
+                        src="Octupus.jpg"
+                        alt="Mascote Polvo com ferramentas"
+                        class="peek-mascot"
+                    >
+
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+                <div class="cta-box" id="contacto">
+
+                    <span class="form-tag">
+                        FALE CONNOSCO
+                    </span>
+
+                    <h3>
+                        O QUE PRECISA DE RESOLVER HOJE?
+                    </h3>
+
+
+                    <form id="problemForm">
+
+                        <div class="form-grid">
+
+                            <!-- NOME -->
+                            <div class="form-row-full">
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="O seu nome"
+                                    required
+                                >
+                            </div>
+
+
+                            <!-- TELEFONE + EMAIL -->
+                            <div class="form-row-split">
+
+                                <input
+                                    type="tel"
+                                    id="telefone"
+                                    name="telefone"
+                                    placeholder="Telefone"
+                                    required
+                                >
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="O seu e-mail"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MENSAGEM -->
+                        <textarea
+                            id="problemMessage"
+                            name="mensagem"
+                            placeholder="Ex: Preciso de uma carrinha de mudanças para sábado e pintura de uma sala..."
+                            required
+                        ></textarea>
+
+
+                        <!-- BOTÕES -->
+                        <div class="btn-group">
+
+                            <button
+                                type="button"
+                                class="btn btn-whatsapp"
+                                id="btnWhatsapp"
+                            >
+                                Enviar por WhatsApp
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-email"
+                                id="btnEmail"
+                            >
+                                Enviar por E-mail
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section class="services" id="servicos">
+
+        <h2>
+            O que resolvemos para si
+        </h2>
+
+        <p class="subtitle">
+            Seja qual for o imprevisto ou a necessidade,
+            temos o especialista certo.
+        </p>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="icon-wrapper">🛠️</div>
+                <h3>Reparações e Manutenção</h3>
+                <p>
+                    Avarias resolvidas com rapidez em casa ou no escritório.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🔌</div>
+                <h3>Instalações</h3>
+                <p>
+                    Montagem e instalação de equipamentos e mobiliário.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">💡</div>
+                <h3>Eletricidade</h3>
+                <p>
+                    Intervenções elétricas seguras por especialistas.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🎨</div>
+                <h3>Pinturas</h3>
+                <p>
+                    Interiores e exteriores com acabamento profissional.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🚰</div>
+                <h3>Canalização</h3>
+                <p>
+                    Fugas, entupimentos e reparações de canalização.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🧹</div>
+                <h3>Limpezas</h3>
+                <p>
+                    Limpezas domésticas, empresariais e pós-obra.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🚚</div>
+                <h3>Transportes</h3>
+                <p>
+                    Mudanças e transporte de bens quando precisa.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">📄</div>
+                <h3>Documentação</h3>
+                <p>
+                    Tratamos da burocracia e gestão documental por si.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="icon-wrapper">🛒</div>
+                <h3>Compras e Recados</h3>
+                <p>
+                    Fazemos as suas compras e recados do dia a dia.
+                </p>
+            </div>
+
+
+            <div class="service-card card-highlight">
+                <div class="icon-wrapper">✨</div>
+                <h3>E muito mais</h3>
+                <p>
+                    Fazemos quase tudo para resolver os seus
+                    imprevistos cotidianos.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PORQUÊ NÓS -->
+    <section class="why-us" id="porque-nos">
+
+        <h2>
+            Porquê <span>Nós</span>
+        </h2>
+
+
+        <div class="why-us-container">
+
+            <div class="why-row">
+                <div class="why-number">01</div>
+                <div class="why-title">Profissionalismo</div>
+                <div class="why-desc">
+                    Parceiros qualificados e experientes em cada área de serviço.
+                </div>
+            </div>
+
+
+            <div class="why-row">
+                <div class="why-number">02</div>
+                <div class="why-title">Confiança</div>
+                <div class="why-desc">
+                    Transparência total, do primeiro contacto à solução final.
+                </div>
+            </div>
+
+
+            <div class="why-row">
+                <div class="why-number">03</div>
+                <div class="why-title">Soluções Eficazes</div>
+                <div class="why-desc">
+                    Resolvemos o problema à primeira, sem complicações.
+                </div>
+            </div>
+
+
+            <div class="why-row">
+                <div class="why-number">04</div>
+                <div class="why-title">Rapidez</div>
+                <div class="why-desc">
+                    Resposta ágil porque o seu tempo também é importante.
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SETORES -->
+    <div class="segments-bar">
+
+        <span>Residencial</span>
+
+        <span class="dot"></span>
+
+        <span>Empresarial</span>
+
+        <span class="dot"></span>
+
+        <span>Particular</span>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                &copy; 2026 Problema Resolvido.
+                Soluções Rápidas de A a Z.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
