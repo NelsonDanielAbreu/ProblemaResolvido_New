@@ -17,7 +17,7 @@
     >
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
@@ -29,10 +29,11 @@
         </div>
 
         <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#porque-nos">Porquê Nós</a>
-            <a href="#contacto" class="nav-cta">Resolver Agora</a>
-        </nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#porque-nos">O que nos diferencia</a>
+    <a href="#contactos">Contactos</a>
+    <a href="#contacto" class="nav-cta">Resolver Agora</a>
+</nav>
     </header>
 
 
@@ -115,25 +116,14 @@
 
 
                             <!-- TELEFONE + EMAIL -->
-                            <div class="form-row-split">
+                           <div class="form-row-split">
+    <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+    <input type="email" id="email" name="email" placeholder="O seu e-mail" required>
+</div>
 
-                                <input
-                                    type="tel"
-                                    id="telefone"
-                                    name="telefone"
-                                    placeholder="Telefone"
-                                    required
-                                >
-
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="O seu e-mail"
-                                    required
-                                >
-
-                            </div>
+<div class="form-row-full">
+    <input type="text" id="morada" name="morada" placeholder="Morada" required>
+</div>
 
                         </div>
 
@@ -294,7 +284,7 @@
     <section class="why-us" id="porque-nos">
 
         <h2>
-            Porquê <span>Nós</span>
+            O que nos <span>Diferencia</span>
         </h2>
 
 
@@ -338,7 +328,122 @@
         </div>
 
     </section>
+<!-- CONTACTOS -->
+<section class="contacts" id="contactos">
 
+    <h2>
+        Entre em <span>Contacto</span>
+    </h2>
+
+    <p class="subtitle">
+        Estamos aqui para ajudar. Escolha a forma mais conveniente
+        de falar connosco.
+    </p>
+
+    <div class="contacts-grid">
+
+        <!-- TELEFONE -->
+        <div class="contact-card">
+            <div class="contact-icon">📞</div>
+
+            <h3>Telefone</h3>
+
+            <p>
+                Fale diretamente connosco.
+            </p>
+
+            <a href="tel:+351926717918">
+                +351 928 118 174
+            </a>
+        </div>
+
+
+        <!-- WHATSAPP -->
+        <div class="contact-card">
+            <div class="contact-icon">💬</div>
+
+            <h3>WhatsApp</h3>
+
+            <p>
+                Envie-nos uma mensagem pelo WhatsApp.
+            </p>
+
+            <a
+                href="https://wa.me/351926717918"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Falar pelo WhatsApp
+            </a>
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+
+            <h3>E-mail</h3>
+
+            <p>
+                Envie-nos o seu pedido por e-mail.
+            </p>
+
+            <a href="mailto:suporte@problemaresolvido.com">
+                suporte@problemaresolvido.com
+            </a>
+        </div>
+
+
+        <!-- MORADA -->
+        <div class="contact-card">
+            <div class="contact-icon">📍</div>
+
+            <h3>Morada</h3>
+
+            <p>
+                [COLOCAR MORADA AQUI]
+            </p>
+
+            <span>
+                [CÓDIGO POSTAL] [LOCALIDADE]
+            </span>
+        </div>
+
+
+        <!-- HORÁRIO -->
+        <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+
+            <h3>Horário</h3>
+
+            <p>
+                Segunda a Sexta
+            </p>
+
+            <span>
+                [HORÁRIO]
+            </span>
+        </div>
+
+
+        <!-- ATENDIMENTO -->
+        <div class="contact-card card-highlight">
+            <div class="contact-icon">✨</div>
+
+            <h3>Precisa de ajuda?</h3>
+
+            <p>
+                Explique-nos o seu problema e nós tratamos do resto.
+            </p>
+
+            <a href="#contacto">
+                Resolver agora
+            </a>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- SETORES -->
     <div class="segments-bar">
@@ -372,7 +477,7 @@
 
 
     <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+    <script src="newscript.js"></script>
 
 </body>
 </html>
