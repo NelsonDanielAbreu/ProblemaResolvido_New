@@ -1540,6 +1540,14 @@ textarea {
         var(--primary);
 }
 
+.contact-time {
+    display: inline-block;
+    font-size: 1.5rem;       /* Aumenta significativamente o tamanho */
+    font-weight: bold;       /* Deixa o texto em negrito */
+    color: #b81d1d;          /* Usa o mesmo tom de vermelho dos outros cartões */
+    margin-top: 15px;        /* Dá espaço em relação ao texto de cima */
+}
+
 
 /* =========================================================
    SEGMENTOS
