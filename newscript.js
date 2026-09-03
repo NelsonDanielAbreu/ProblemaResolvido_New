@@ -141,7 +141,7 @@ ${mensagem}`;
     // NÚMERO DE WHATSAPP
     // =====================================================
 
-    const phone = "351926717918";
+    const phone = "351928118174";
 
 
     // Criar URL do WhatsApp
@@ -236,7 +236,7 @@ function sendToEmail() {
     // =====================================================
 
     const emailDestino =
-        "suporte@problemaresolvido.com";
+        "or.problemaresolvido@gmail.com";
 
 
     // =====================================================
