@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnWhatsapp.addEventListener('click', (e) => {
 
             e.preventDefault();
-
             sendToWhatsApp();
 
         });
@@ -46,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnEmail.addEventListener('click', (e) => {
 
             e.preventDefault();
-
             sendToEmail();
 
         });
@@ -91,7 +89,7 @@ function sendToWhatsApp() {
     }
 
 
-    // Verificar se todos os campos obrigatórios estão preenchidos
+    // Verificar campos obrigatórios
 
     if (!form.checkValidity()) {
 
@@ -130,10 +128,13 @@ function sendToWhatsApp() {
 `Olá! O meu nome é *${nome}*.
 
 Telefone: ${telefone}
+
 E-mail: ${email}
+
 Morada: ${morada}
 
 *Preciso de ajuda com o seguinte problema:*
+
 ${mensagem}`;
 
 
@@ -159,12 +160,21 @@ ${mensagem}`;
     );
 
 
-    // Abrir WhatsApp numa nova janela
+    // =====================================================
+    // ABRIR WHATSAPP
+    // =====================================================
 
     window.open(
         urlFinal,
-        '_blank'
+        "_blank"
     );
+
+
+    // =====================================================
+    // LIMPAR FORMULÁRIO
+    // =====================================================
+
+    form.reset();
 
 }
 
@@ -244,9 +254,7 @@ function sendToEmail() {
     // =====================================================
 
     const assunto =
-        encodeURIComponent(
-            "Pedido de Ajuda — " + nome
-        );
+        "Pedido de Ajuda — " + nome;
 
 
     // =====================================================
@@ -254,39 +262,6 @@ function sendToEmail() {
     // =====================================================
 
     const corpo =
-        encodeURIComponent(
-
-            "Olá!\n\n" +
-
-            "Novo pedido de ajuda:\n\n" +
-
-            "Nome: " + nome + "\n" +
-
-            "Telefone: " + telefone + "\n" +
-
-            "E-mail: " + email + "\n" +
-
-            "Morada: " + morada + "\n\n" +
-
-            "Descrição do problema:\n" +
-
-            mensagem
-
-        );
-
-
-// =====================================================
-// CRIAR URL DO GMAIL
-// =====================================================
-
-const urlGmail =
-    "https://mail.google.com/mail/?view=cm" +
-    "&fs=1" +
-    "&to=" + encodeURIComponent(emailDestino) +
-    "&su=" + encodeURIComponent(
-        "Pedido de Ajuda — " + nome
-    ) +
-    "&body=" + encodeURIComponent(
         "Olá!\n\n" +
         "Novo pedido de ajuda:\n\n" +
         "Nome: " + nome + "\n" +
@@ -294,19 +269,42 @@ const urlGmail =
         "E-mail: " + email + "\n" +
         "Morada: " + morada + "\n\n" +
         "Descrição do problema:\n" +
-        mensagem
+        mensagem;
+
+
+    // =====================================================
+    // CRIAR URL DO GMAIL
+    // =====================================================
+
+    const urlGmail =
+        "https://mail.google.com/mail/?view=cm" +
+        "&fs=1" +
+        "&to=" + encodeURIComponent(emailDestino) +
+        "&su=" + encodeURIComponent(assunto) +
+        "&body=" + encodeURIComponent(corpo);
+
+
+    console.log(
+        "A abrir Gmail:",
+        urlGmail
     );
 
-console.log(
-    "A abrir Gmail:",
-    urlGmail
-);
 
-// Abrir Gmail numa nova aba
-window.open(
-    urlGmail,
-    "_blank",
-    "noopener,noreferrer"
-);
+    // =====================================================
+    // ABRIR GMAIL
+    // =====================================================
+
+    window.open(
+        urlGmail,
+        "_blank",
+        "noopener,noreferrer"
+    );
+
+
+    // =====================================================
+    // LIMPAR FORMULÁRIO
+    // =====================================================
+
+    form.reset();
 
 }
