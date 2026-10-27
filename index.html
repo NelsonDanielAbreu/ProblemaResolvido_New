@@ -30,24 +30,30 @@
     >
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styleUpdated.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO / MENU -->
-    <header>
-        <div class="logo">
-            PROBLEMA<span>RESOLVIDO</span>
-        </div>
-
-        <nav>
+ <header>
+  <div class="logo">
+    <img src="LogoResolvido.png" alt="Mascote Polvo com ferramentas" class="peek-mascot">
+    Problema<span>Resolvido</span>
+  </div>
+  
+  <nav>
     <a href="#servicos">Serviços</a>
     <a href="#porque-nos">O que nos diferencia</a>
     <a href="#contactos">Contactos</a>
     <a href="#contacto" class="nav-cta">Resolver Agora</a>
-</nav>
-    </header>
+    
+    <!-- MOVIDO PARA AQUI: Botão com Ícone SVG Moderno (Sem emojis amadores) -->
+    <button id="theme-toggle" class="btn-theme-toggle" aria-label="Alternar Tema">
+      <svg class="sun-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="moon-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+  </nav>
+</header>
 
 
     <!-- SECÇÃO PRINCIPAL -->
@@ -81,23 +87,7 @@
             </div>
 
 
-            <!-- LADO DIREITO -->
-            <div class="hero-right">
-
-                <!-- MASCOTE -->
-                <div class="mascot-container">
-
-                    <div class="floating-bubble">
-                        Diga-me o seu problema, eu trato do resto!
-                    </div>
-
-                    <img
-                        src="Octupus.jpg"
-                        alt="Mascote Polvo com ferramentas"
-                        class="peek-mascot"
-                    >
-
-                </div>
+          
 
 
                 <!-- FORMULÁRIO -->
@@ -283,7 +273,7 @@
                 <div class="icon-wrapper">✨</div>
                 <h3>E muito mais</h3>
                 
-                   <p>Tratamos de quase tudo para resolver os seus imprevistos do dia a dia.</p>
+                   <p class="text-white-always">Tratamos de quase tudo para resolver os seus imprevistos do dia a dia.</p>
                 
             </div>
 
@@ -462,23 +452,26 @@
     </div>
 
 
-    <!-- RODAPÉ -->
-    <footer>
-
-        <div class="footer-content">
-
-            <p>
-                &copy; 2026 Problema Resolvido.
-                Soluções Rápidas de A a Z.
-            </p>
-
-        </div>
-
-    </footer>
+   <footer>
+  <h2>Tem um problema? Nós resolvemos.</h2>
+  <p style="opacity: 0.7; margin: 15px 0 30px 0;">Disponíveis para ajudar em qualquer altura.</p>
+  <a href="#formulario" class="btn-email" style="display: inline-flex; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: 700;">Pedir Ajuda Agora</a>
+  
+  <!-- ZONA DOS CRÉDITOS DO DEVELOPER ALTERADA -->
+  <div class="footer-credits">
+    <p>&copy; 2026 PROBLEMARESOLVIDO. Todos os direitos reservados.</p>
+    <p class="dev-link">
+      Desenvolvido por 
+      <a href="http://linkedin.com/in/daniel-abreu-a79021273" target="_blank" rel="noopener noreferrer">
+        Daniel Abreu <svg xmlns="http://w3.org" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="linkedin-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+    </p>
+  </div>
+</footer>
 
 
     <!-- JAVASCRIPT -->
-    <script src="newscript.js"></script>
+    <script src="scriptUpdated.js"></script>
 
 </body>
 </html>
