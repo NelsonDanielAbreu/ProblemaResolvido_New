@@ -495,7 +495,7 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 .contact-icon { font-size: 30px; margin-bottom: 20px; }
 .contact-card h3 { font-size: 18px; font-weight: 700; color: #17181a !important; margin-bottom: 10px; }
 .contact-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
-.contact-card a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 700; margin-top: auto; transition: color 0.2s ease; }
+.contact-card a { color: var(--text-main); text-decoration: none; font-size: 14px; font-weight: 700; margin-top: auto; transition: color 0.2s ease; }
 .contact-card a:hover { color: var(--primary-hover); }
 .contact-card span { color: var(--text-secondary); font-size: 14px; font-weight: 500; margin-top: auto; }
 .contact-card.card-highlight { background: linear-gradient(145deg, var(--primary), #a61212) !important; border-color: var(--primary) !important; box-shadow: 0 10px 30px rgba(214, 28, 28, 0.15) !important; }
@@ -510,6 +510,7 @@ body.dark-theme .contacts .subtitle { color: #a0a6b5 !important; }
 body.dark-theme .contact-card { background-color: #12141c !important; border: 1px solid rgba(255, 255, 255, 0.06) !important; box-shadow: none; }
 body.dark-theme .contact-card h3 { color: #ffffff !important; }
 body.dark-theme .contact-card p, body.dark-theme .contact-card span { color: #a0a6b5 !important; }
+
 body.dark-theme .contact-time { color: #ff4d4d; }
 /* =========================================================
 SEGMENTOS & FOOTER CREDITS (LinkedIn Otimizado)
